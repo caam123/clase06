@@ -1,11 +1,78 @@
-body{
-	background-color:#7B2A3B;
-	color:#F8E7A2;
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	/*El box sizing border box sirve para que el los margenes/bordes sean parte del total de la caja*/
 }
-nav{
-	background:#E57661;
-	color:blue;
+
+::selection {
+	background-color: #377EB0;
 }
-nav ul li a{
-	color:263E7B;
+
+body {
+	background-color: #081717;
+	color: #20BFA2;
+}
+
+a {
+	text-decoration: none
+}
+
+.wrapper {
+	max-width: 1024px;
+	width: 90%;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+main#main-wrapper {
+	margin-top: 90px;
+	height: 600px;
+	overflow: scroll;
+}
+
+nav {
+	background: #D2F0C1;
+	color: #5e6790;
+	height: 36px;
+	padding: 7px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	border-bottom: 5px solid olive;
+	text-align:center;
+}
+nav ul{
+	padding:0;
+}
+nav ul li a {
+	color: #263E7B;
+}
+
+nav li {
+	width: 25%;
+	float: left;
+	list-style: none;
+
+}
+nav li > ul {
+	background-color: white;
+	float:left;
+	top:11px;
+	position:relative;
+	display: none
+}
+nav li > ul > li{
+	width: 100%;
+}
+
+
+
+
+
+a#front{
+	color:red;
+	position: fixed;
+	top:0;
+	left: 0;
+	background-color: red;
+	z-index: 10;
 }
